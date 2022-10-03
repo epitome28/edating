@@ -1,60 +1,71 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
-
-        <x-jet-validation-errors class="mb-4" />
-
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-            </div>
-
-            @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
-                    <x-jet-label for="terms">
-                        <div class="flex items-center">
-                            <x-jet-checkbox name="terms" id="terms"/>
-
-                            <div class="ml-2">
-                                {!! __('I agree to the :terms_of_service and :privacy_policy', [
-                                        'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Terms of Service').'</a>',
-                                        'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Privacy Policy').'</a>',
-                                ]) !!}
-                            </div>
-                        </div>
-                    </x-jet-label>
+@extends('layouts.header')
+@section('content')
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1" style="background:url(assets/images/page-header.jpg)">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="page-header-inner">
+                    <div class="page-title">
+                        <h2>TuruLav Registation</h2>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="{{url('home')}}">Home</a></li>
+                        <li class="active">Sign up</li>
+                    </ol>
                 </div>
-            @endif
+            </div>
+        </div>
+    </section>
+    <!-- ==========Page Header Section Ends Here========== -->
+    <div class="login-section padding-tb">
+        <div class="container">
+            <div class="account-wrapper">
+                <h3 class="title">Register Now</h3>
+    <x-jet-validation-errors class="mb-4" />
 
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-jet-button class="ml-4">
-                    {{ __('Register') }}
-                </x-jet-button>
+        <form method="POST" action="{{ route('register') }}" class="account-form">
+            @csrf
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" name="name">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" name="password">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Confirm Password" name="password_confirmation">
+            </div>
+            <div class="form-group">
+                <button class="d-block lab-btn"><span>Get Started Now</span></button>
             </div>
         </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+                <div class="account-bottom">
+                    <span class="d-block cate pt-10">Are you a member? <a href="{{route('login')}}">Login</a></span>
+                    <span class="or"><span>or</span></span>
+                    <h5 class="subtitle">Register With Social Media</h5>
+                    <ul class="social-media social-color justify-content-center d-flex lab-ul">
+                        <li>
+                            <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="pinterest"><i class="icofont-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Sign up Section ends Here========== -->
+@endsection
+
