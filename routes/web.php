@@ -27,4 +27,9 @@ Route::middleware([
     })->name('dashboard');
 });
 Route::view('home', 'home');
+Route::view('members', 'members');
+Route::view('home', 'home');
+Route::view('home', 'home');
+Route::view('home', 'home');
+Route::view('home', 'home');
 Route::view('contact-us', 'contact');

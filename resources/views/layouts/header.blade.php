@@ -80,10 +80,26 @@
                         </li>
 
                         <li>
-                            <a href="#">Community</a>
+                            <a href="#0">Features</a>
+                            <ul class="submenu">
+                                <li><a href="{{url('members')}}">All Members</a></li>
+                                <li><a href="">Member Profile</a></li>
+                                <li><a href="">Login</a></li>
+                                <li><a href="">Sign Up</a></li>
+                                <li><a href="">Pricing Plan</a></li>
+                                <li><a href="">404 Page</a></li>
+
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="">Community</a>
+                        </li>
+                        <li>
+                            <a href="#0">Blog</a>
+                            <ul class="submenu">
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Blog Single</a></li>
+                            </ul>
                         </li>
                         <li><a href="{{url('contact-us')}}">Contact</a></li>
                     </ul>
@@ -129,7 +145,7 @@
                                 <img src="assets/images/footer/icons/02.png" alt="email-icon">
                             </div>
                             <div class="lab-content">
-                                <span>Email : admin@turulav.com</span>
+                                <span>Email : admin@edating.com</span>
                             </div>
                         </div>
                     </div>
@@ -245,7 +261,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="footer-bottom-content text-center">
-                        <p>&copy; 2022 <a href="index.html">TuruLav</a> -Best For Dating HTML Template.</p>
+                        <p>&copy; 2022 <a href="index.html">Edating</a> -Best For Dating.</p>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
-/*!
-Template Name: turulav
-Template URI: https://themeforest.net/user/labartisan
-Author: labartisan.net
-Author URI: https://themeforest.net/user/labartisan
+/*/
+ Name: Edating
+ URI: https://essentil.ng/edating
+Author: essential group
+Author URI: https://edating.com
 Description: Description
 Version: 1.0.0
-Text Domain: turulav
+Text Domain: Edating
 Tags: community, couple, creative, dating, groups, love template, matching, members, online dating, profile, relationship, romance, social media, social network
 
 */
@@ -35,6 +35,8 @@ Tags: community, couple, creative, dating, groups, love template, matching, memb
 #Footer
 --------------------------------------------------------------*/
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
+
+
 .footer-section .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner, .account-form .form-group .checkgroup, .contact-form-wrapper .contact-form form.comment-form, .contact-item, .comment-respond .add-comment .comment-form, .blog-section .main-blog .blog-wrapper .post-item .tags-section .tags, .blog-section .main-blog .blog-wrapper .post-item .tags-section, .blog-section .post-item-inner .blog-footer, .post-item .post-meta .post-meta-bottom .react-list, .post-item .post-meta .post-meta-top, .post-item .post-content .post-author .post-author-inner .author-details .post-status, .post-item .post-content .post-author .post-author-inner .author-details, .post-item .post-content .post-author .post-author-inner, .create-post .lab-inner .lab-content .post-form .content-type .content-list, .create-post .lab-inner .lab-thumb .thumb-inner, .info-card .info-card-content .info-list li, .profile-section .member-profile .profile-item .profile-information .profile-contact li a, .profile-section .member-profile .profile-item .profile-information .profile-contact, .profile-section .member-profile .profile-item .profile-information, .member-page-section .member-wrapper .member-info .all-member, .member-page-section .member-wrapper .member-info, .clints-section .section-wrapper .clients .client-list .client-content .client-info .rating ul, .clints-section .section-wrapper .clients .client-list .client-content .client-info, .banner-form .gender,
 .banner-form .person,
 .banner-form .age,
